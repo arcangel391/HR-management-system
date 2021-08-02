@@ -1,20 +1,21 @@
 <template>
     <app-layout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            <h2 class="font-semibold text-xl text-black-800 leading-tight">
                 Dashboard
             </h2>
         </template>
 
 
-        <div class="py-12">
+        <div class="dash py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                 <div class="py-12 bg-white">
+                <div class="bg-green-500 border-double border-4 border-blue-500 overflow-hidden shadow-x3 rounded-lg">
+                <div class="rounded-full py-12">
+                   
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
       <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase"></h2>
-      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-black-900 sm:text-4xl">
         HR MANAGEMENT SYSTEM
       </p>
       <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">

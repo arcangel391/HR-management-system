@@ -9,7 +9,7 @@
                 <jet-authentication-card>
                     <div class="w-full py-10 px-10 md:px-10">
                         <div class="text-center mb-10">
-                            <h1 class="font-bold text-3xl text-gray-900">Register</h1>
+                            <h1 class="font-bold text-3xl text-gray-900">REGISTER</h1>
                             <p><jet-validation-errors class="mb-4" /></p>
                         </div>
                         <form @submit.prevent="submit">
@@ -21,6 +21,26 @@
                             <div class="mt-4">
                                 <jet-label for="email" value="Email" />
                                 <jet-input id="email" type="email" class="text-black mt-1 block w-full" v-model="form.email" required />
+                            </div>
+
+                            <div class="mt-4">
+                                  <jet-label for="gender" value="Gender" />
+                               <select  class="text-black mt-1 block w-full" v-model="form.gender" required>
+                                <option>Male</option>
+                                <option>Female</option>
+                                </select>
+                            </div>
+
+                             <div class="mt-4">
+                                  <jet-label for="position" value="Position" />
+                               <select  class="text-black mt-1 block w-full" v-model="form.position" required>
+                                <option>HR</option>
+                                <option>IT</option>
+                                <option>Finance</option>
+                                <option>Administration</option>
+                                <option>Manager</option>
+                                <option>CEO</option>
+                                </select>
                             </div>
     
                             <div class="mt-4">
@@ -87,6 +107,8 @@
                 form: this.$inertia.form({
                     name: '',
                     email: '',
+                    gender: '',
+                    position: '',
                     password: '',
                     password_confirmation: '',
                     terms: false,

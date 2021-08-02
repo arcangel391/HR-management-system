@@ -22,13 +22,18 @@
                                 Home
                                 </jet-nav-link>
 
-                                 <jet-nav-link :href="route('users.index')" :active="route().current('dashboard')" class="dashboard">
+                                  <jet-nav-link :href="route('users.index')" :active="route().current('dashboard')" class="dashboard">
                                 Employee
                                 </jet-nav-link>
 
                                 <jet-nav-link :href="route('posts.index')" :active="route().current('dashboard')" class="dashboard">
                                Posts
                                 </jet-nav-link>
+
+                                  <jet-nav-link :href="route('chart')" :active="route().current('dashboard')" class="dashboard">
+                               Charts
+                                </jet-nav-link>
+
                             </div>
                         </div>
 
